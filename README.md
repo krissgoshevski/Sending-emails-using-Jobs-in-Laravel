@@ -5,7 +5,8 @@ This example include 2 jobs:
 
 First job is for Changing the values of the firstname and lastname, at the beggining i have seeder for populate the data different, for the column firstname i have inserted lastname, for the column lastname i have inserted firstname...for that scenario i have job named UpdateUserNames 
 
-Second job is Notification Queue for Notification to admins for new registered users, named RegisteredUserNotification implements ShouldQueue for faster sending email to the admin, do not wait 5 seconds .
+Second job is Notification Queue for Notification to admins for new registered users, named RegisteredUserNotification implements ShouldQueue for faster sending email to the admin, to do not wait 5 seconds after succesfully registration,
+the rest of the login is within RegisterController
 
  - Seeders for Seeding the Database
  - Controllers
@@ -13,6 +14,7 @@ Second job is Notification Queue for Notification to admins for new registered u
  - ORM
  - Models relationships between the User and Role model
  - Info in Logs
+ - Authentication Register/Login/Logout page
    
 
 
