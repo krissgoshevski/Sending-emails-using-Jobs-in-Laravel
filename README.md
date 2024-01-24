@@ -1,3 +1,21 @@
+
+This is example of using Queues in Laravel.
+
+This example include 2 jobs:
+
+First job is for Changing the values of the firstname and lastname, at the beggining i have seeder for populate the data different, for the column firstname i have inserted lastname, for the column lastname i have inserted firstname...for that scenario i have job named UpdateUserNames 
+
+Second job is Notification Queue for Notification to admins for new registered users, named RegisteredUserNotification implements ShouldQueue for faster sending email to the admin, do not wait 5 seconds .
+
+ - Seeders for Seeding the Database
+ - Controllers
+ - Jobs
+ - ORM
+ - Models relationships between the User and Role model
+ - Info in Logs
+   
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
